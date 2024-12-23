@@ -198,6 +198,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- Reformat text paragraphs to 80 char width
 vim.keymap.set('n', '<leader>F', '{!}fmt -w 80<cr>', { desc = '¶ → 80' })
 
+-- Shorthand buffer delete
+vim.keymap.set('n', '<leader>bd', '<cmd>bdelete<cr>', { desc = '[b]uffer [d]elete' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
