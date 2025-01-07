@@ -5,16 +5,15 @@ return {
       options = {
         always_show_bufferline = true,
         diagnostics = 'nvim_lsp',
-        -- highlights = require("catppuccin.groups.integrations.bufferline").get(),
+        highlights = require('catppuccin.groups.integrations.bufferline').get(),
         indicator = {
           style = 'underline',
         },
         numbers = function(opts)
-          -- lsp error on `opts.raise` and `opts.id` but works!
-          -- return string.format(opts.raise(opts.ordinal))
+          -- lsp error on `opts.raise` and `opts.ordinal` but works!
+          return string.format(opts.raise(opts.ordinal))
         end,
-        -- separator_style = 'thin',
-        separator_style = 'slope',
+        separator_style = 'thin',
       },
     }
   end,

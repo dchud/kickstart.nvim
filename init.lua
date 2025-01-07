@@ -196,7 +196,7 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- Reformat text paragraphs to 80 char width
-vim.keymap.set('n', '<leader>F', '{!}fmt -w 80<cr>', { desc = '¶ → 80' })
+vim.keymap.set('n', '<leader>F', '{!}fmt -w 80<cr>}', { desc = '¶ → 80' })
 
 -- Shorthand buffer delete
 vim.keymap.set('n', '<leader>bd', '<cmd>bdelete<cr>', { desc = '[b]uffer [d]elete' })
@@ -627,7 +627,8 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         -- gopls = {},
-        -- pyright = { disableOrganizeImports = true },
+        pyright = { disableOrganizeImports = true },
+        ruff = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
