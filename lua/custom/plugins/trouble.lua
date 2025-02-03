@@ -2,6 +2,15 @@ return {
   'folke/trouble.nvim',
   opts = {}, -- for default options, refer to the configuration section for custom setup.
   cmd = 'Trouble',
+  modes = {
+    my_symbols = {
+      mode = 'Symbols',
+      preview = {
+        -- not working yet
+        -- size = { width = 0.35 },
+      },
+    },
+  },
   keys = {
     {
       '<leader>xx',
